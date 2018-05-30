@@ -61,6 +61,11 @@
     [self updatePlaceholder];
 }
 
+- (void)setAttributedText:(NSAttributedString *)attributedText {
+    [super setAttributedText:attributedText];
+    [self updatePlaceholder];
+}
+
 - (void)updatePlaceholder {
     if (self.text.length > 0) {
         self.placeHolderLb.hidden = YES;
